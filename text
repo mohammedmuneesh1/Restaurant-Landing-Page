@@ -1,0 +1,79 @@
+import React, { useRef, useState } from 'react'
+
+export const About = () => {
+
+    //react video play state start
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef(null);
+    const handlePlayButtonClick = () => {
+      setIsPlaying(true);
+      videoRef.current.play();
+    };
+    //react video play state end
+  return (
+    <div id='about-container-id'>
+       <div className='about-background-image-container'>
+        <img src='' alt="background image of about" />
+       </div>   
+       <div className='about-text-container'>
+        <p className='sub-heading'>About </p>
+        <h1>
+        Food Constitutes A Cornerstone Of A Balanced Dietary Regimen
+        </h1>
+        <p>
+            
+Discover the power of balance in your diet. Our approach emphasizes the importance of incorporating diverse food groups for optimal health. With a balanced regimen, you'll fuel your body efficiently, promoting vitality and well-being. Join us on the journey to a healthier you.
+        </p>
+        <p>
+        Optimize your health with balanced nutrition. Our approach ensures vital nutrients for peak well-being. Join us for a healthier you.
+        </p>
+        <div className='about-buttons'>
+            <button className=''>Learn More</button>
+            <div>
+      <video ref={videoRef} style={{ display: isPlaying ? 'block' : 'none' }} controls>
+        <source src="your-video-source-url.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button onClick={handlePlayButtonClick}>Play Video</button>
+    </div>
+        </div>
+
+       </div>
+
+    </div>
+  )
+}
+
+
+
+
+<div>
+  <video ref={videoRef} style={{ display: isPlaying ? 'block' : 'none' }} controls>
+    <source src="your-video-source-url.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <button onClick={handlePlayButtonClick}>Play Video</button>
+</div>
+
+//react video play state start
+const [isPlaying, setIsPlaying] = useState(false);
+const videoRef = useRef(null);
+const handlePlayButtonClick = () => {
+  setIsPlaying(true);
+  videoRef.current.play();
+};
+//react video play state end
+
+
+
+display: flex;
+align-items: center;
+padding:1rem 2.5rem;
+background-color:#fe9e0d;
+border:none;
+outline:none;
+cursor: pointer;
+border-radius:5rem;
+font-size: 1.2rem;
+transition: .2s ease-in;
+margin-top: 1rem;

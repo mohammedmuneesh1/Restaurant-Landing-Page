@@ -1,38 +1,289 @@
-.App {
-  text-align: center;
+*{
+  padding:0px;
+  margin:0px;
+  scroll-behavior: smooth;
+  overflow-x:none;
+  overflow-y: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* background-color: #f6f6f6; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
+  width: 85vw;
+  max-width: 85vw;  
+  margin: 0rem auto;
+  /* background:blue; */
+}
+.HomeBackgroundBanner{
+  position: absolute;
+  top:-140px;
+  right:-170px;
+  z-index:-2;
+  max-width: 700px;
+  
+}
+
+
+/* https://www.figma.com/file/oSk3FEZ7qJOTtRjKUJgYDW/Restaurant-Landing-Page-Project-For-Youtube?type=design&node-id=0-1&mode=design&t=wfRbk3kGN6SFGIZ8-0 */
+
+
+/*<Home/>Page Css Start Here*/
+.home-parent{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+  /* background-color: pink; */
+}
+.Home-Background-Banner{
+  position: absolute;
+  top:-150px;
+  right:-100px;
+  max-width: 600px;
+  z-index:-2;
+
+}
+.home-text{
+  /* background-color: red; */
+  flex:1;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+}
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing:1px;
+  line-height: 4rem;
+  font-weight: 500;
+  color:grey;
+  max-width: 600px;
+  /* background:yellow; */
+}
+.primary-paragraph {
+  font-size: clamp(1rem,3vw,1.5rem);
+  letter-spacing:1px;
+  color:grey;
+  /* background-color: aquamarine; */
+  max-width: 550px;
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+.primary-button {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:1rem 2.5rem;
+  background-color:#fe9e0d;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  border-radius:5rem;
+  font-size: 1.2rem;
+  transition: .2s ease-in;
+  margin-top: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.home-text button:hover{
+  background-color:#e48f0f;
+  color:white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-text button svg {
+  margin-left:.5rem;
+}
+.home-banner-image{
+  max-width: 600px;
+   /* background-color: aqua; */
+   flex: 1;
   }
-  to {
-    transform: rotate(360deg);
+ /* 
+
+
+
+}  */
+
+
+/*<Home/>Page Css End Here*/
+/*===============================================================================================================================*/
+/*<About> Page Css Start Here*/
+#about-container-id{
+  margin-top:10rem;
+  /* background-color:aqua; */
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.about-background-image-container{
+  position:absolute;
+  max-width:400px;
+  left:-150px;
+  z-index: -2;
+}
+
+.about-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/* background-color: red; */
+}
+
+.sub-heading{
+  color:#e48f0f;
+  font-weight:700;
+  font-size: 1.5rem;
+  margin-bottom:.5rem;
+  letter-spacing: .5px;
+  margin-left:5px;
+
+}
+#about-primary-heading{
+  /* background-color: bisque;  */
+  max-width: 800px;
+  letter-spacing:1px;
+
+}
+.about-banner-container{
+  margin-right: 1.5rem;
+  /* background-color: violet; */
+}
+.about-buttons{
+  display: flex;
+  flex-direction: row;
+  /* background-color: cadetblue; */
+  align-items: center;
+}
+#about-primary-button{
+  margin-top: 0px;
+}
+.watch-video-button{
+  /* background-color: white; */
+  background: transparent;
+  border:1px solid black;
+  outline: none;
+  cursor:pointer;
+  margin-left:1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #484848;
+  padding:.8rem 1rem;
+  border-radius:5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* max-height: 3rem; */
+  transition: .2s ease-in;
+  /* margin-top: .9rem; */
+}
+
+
+.watch-video-button svg {
+  font-size: 2rem;
+  margin-left:.3rem;
+}
+
+.watch-video-button:hover,.watch-video-button svg:hover{
+  color:black;
+}
+/*<About> Page Css End Here*/
+
+
+
+
+
+@media all and (max-width:1000px){
+  .home-parent,#about-container-id{
+    margin-top:2.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text{
+    justify-content: center;
+    align-items: center;
+  }
+  .primary-heading{
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  #about-container-id{
+    flex-direction: column;
+  }
+  .about-banner-container{
+    max-width: 500px;
+
+  }
+  .about-text-container{
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+  }
+  #about-primary-heading{
+    text-align: center;
+  }
+  .sub-heading{
+    margin-left: 0;
+  }
+
+}
+
+
+@media all and (max-width:800px){
+  .primary-heading{
+    max-width: 90%;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 0px;
+  };
+  .primary-paragraph {
+    text-align: center;
+  }
+  .primary-button,.watch-video-button{
+    font-size: 1rem;
+    padding:0.8rem 1.9rem;
+  }
+  .primary-button{
+    display: flex;
+    justify-content: center;
+  }
+  .watch-video-button{
+    margin-left: 0rem;
+    max-width: 100%;
+  }
+  .about-buttons{
+    flex-direction: column;
+  }
+  
+ 
+  .about-banner-container{
+    width: 100%;
+    max-width:95vw;
+  }
+  
+  
+  
+}
+
+
+@media all and (max-width:600px){
+  .App{
+    max-width: 95vw;
+  }
+  /* .HomeBackgroundBanner{
+    display: none;
+  } */
+}
+
+@media all and (max-width:400px){
+  #primary-paragraph{
+    line-height: 1.5rem;
   }
 }
