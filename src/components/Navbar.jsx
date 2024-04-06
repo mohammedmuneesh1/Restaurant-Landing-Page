@@ -10,6 +10,7 @@ export const Navbar = () => {
   return (
     <header className=" lg:px-16 px-4 bg-transparent flex flex-wrap items-center py-4 ">
     <div className="flex-1 flex justify-between items-center">
+       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a href="#" className="text-xl">Company</a>
     </div>
 
@@ -24,11 +25,17 @@ export const Navbar = () => {
     <div className={`md:flex md:items-center md:w-auto w-full ${isMenuOpen ? 'block' : 'hidden'}`} id="menu">
       <nav>
         <ul className="md:flex items-center justify-between text-lg font-semibold text-gray-800 pt-4 md:pt-0">
-          <li><a className="md:p-4 py-3 px-0 block" href="#">Home</a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <li><a className="md:p-4 py-3 px-0 block" href="#home-parent-id" >Home</a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><a href="#about-container-id" className="md:p-4 py-3 px-0 block">About</a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><a className="md:p-4 py-3 px-0 block" href="#">Testimonials</a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact</a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2 " href="#"><BsCart2 className='text-2xl'/></a></li>
+           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><button className=' bg-white py-3 px-5 rounded-3xl  font-semibold  md:mx-4  '>Booking Now</button></li>
         </ul>
       </nav>

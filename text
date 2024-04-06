@@ -66,14 +66,12 @@ const handlePlayButtonClick = () => {
 
 
 
-display: flex;
-align-items: center;
-padding:1rem 2.5rem;
-background-color:#fe9e0d;
-border:none;
-outline:none;
-cursor: pointer;
-border-radius:5rem;
-font-size: 1.2rem;
-transition: .2s ease-in;
-margin-top: 1rem;
+bg-transparent text-center  
+
+
+
+/*=================================<Footer> Component Style Start Here========================================* /
+
+
+
+/*=================================<Footer> Component Style End Here========================================* /

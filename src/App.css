@@ -159,6 +159,7 @@ body{
   flex-direction: row;
   /* background-color: cadetblue; */
   align-items: center;
+  margin-top:1rem;
 }
 #about-primary-button{
   margin-top: 0px;
@@ -166,7 +167,7 @@ body{
 .watch-video-button{
   /* background-color: white; */
   background: transparent;
-  border:1px solid black;
+  border:none;
   outline: none;
   cursor:pointer;
   margin-left:1.5rem;
@@ -195,8 +196,33 @@ body{
 }
 /*<About> Page Css End Here*/
 
-
-
+/*==============================<Footer> Component Style Start Here=================================================*/
+.instagram-icon{
+  color:#FF5A5F;
+}
+.instagram-icon:hover{
+  color:rgb(64, 93, 230);
+}
+.twitter-icon{
+  color:#1DA1F2;
+}
+.twitter-icon:hover {
+  /* color: #347cb4; Hover color */
+  color:#1A91DA;
+}
+.facebook-icon{
+  color:#1877F2;
+}
+.facebook-icon:hover{
+  color:#2468e3;
+}
+.linkedin-icon{
+  color: #0077B5;
+}
+.linkedin-icon:hover{
+  color:#005983;
+}
+/*==============================<Footer> Component Style Start Here=================================================*/
 
 
 @media all and (max-width:1000px){
@@ -231,6 +257,12 @@ body{
   }
   .sub-heading{
     margin-left: 0;
+  }
+  .about-buttons{
+    margin-top: .5rem;
+  }
+  .watch-video-button{
+    margin-top:.5rem;
   }
 
 }
