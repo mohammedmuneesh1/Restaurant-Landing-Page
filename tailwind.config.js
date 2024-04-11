@@ -3,9 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      zIndex: {
-        '-2': '-2',
+      width: {
+        '128': '32rem',
+        'f15':'3rem',
+        'w290':"290px"
       },
+      minHeight: {
+        '85': '350px',
+      }
     },
   },
   plugins: [],
