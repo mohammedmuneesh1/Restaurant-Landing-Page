@@ -7,11 +7,11 @@ export const About = () => {
       <div className="about-background-image-container">
         <img
           src={process.env.REACT_APP_ABOUT_SECTION_BACKGROUND_IMAGE}
-          alt="background image of about"
+          alt="background of about"
         />
       </div>
       <div className="about-banner-container">
-          <img src={process.env.REACT_APP_ABOUT_SECTION_BANNER_IMAGE} alt="about banner image" />
+          <img src={process.env.REACT_APP_ABOUT_SECTION_BANNER_IMAGE} alt="about banner jpg" />
 
         </div>
       <div className="about-text-container">
