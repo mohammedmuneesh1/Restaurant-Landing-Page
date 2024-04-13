@@ -8,12 +8,12 @@ export const workInfoData = [
     {
       imageUrl: "https://res.cloudinary.com/dawxhtums/image/upload/v1712105662/RESTAURANT%20LANDING%20PAGE%20ASSETS/nv6v8sodhjuwzaa4melc.png",
       title: "Choose How Often",
-      text: "Take control of your dining schedule! Whether it's weekly, monthly, or whenever you crave, customize your experience at [Your Restaurant Name].",
+      text: "Take control of your dining schedule! Whether it's weekly, monthly, or whenever you crave, customize your experience at FreshBite.",
     },
     {
       imageUrl: "https://res.cloudinary.com/dawxhtums/image/upload/v1712105662/RESTAURANT%20LANDING%20PAGE%20ASSETS/j5wyztn8nbf3trqxhp8n.png",
       title: "Fast Deliveries",
-      text: "Enjoy swift delivery of your favorite dishes straight to your doorstep! Experience prompt and reliable service with [Your Restaurant Name].",
+      text: "Enjoy swift delivery of your favorite dishes straight to your doorstep! Experience prompt and reliable service with FreshBite.",
     },
   ];
 

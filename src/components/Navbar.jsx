@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {BsCart2} from "react-icons/bs";
+import { Link } from 'react-router-dom';
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,7 +12,7 @@ export const Navbar = () => {
     <header className=" lg:px-16 px-4 bg-transparent flex flex-wrap items-center py-4 ">
     <div className="flex-1 flex justify-between items-center">
        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a href="#" className="text-xl">Company</a>
+      <Link to="/" className="font-serif font-extrabold text-xl tracking-normal sm:tracking-wider">FreshBite Café</Link>
     </div>
 
     <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block" onClick={toggleMenu}>
@@ -26,9 +27,9 @@ export const Navbar = () => {
       <nav>
         <ul className="md:flex items-center justify-between text-lg font-semibold text-gray-800 pt-4 md:pt-0">
            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <li><a className="md:p-4 py-3 px-0 block" href="#home-parent-id" >Home</a></li>
+          <li><Link to="/" className="md:p-4 py-3 px-0 block" href="#Home" >Home</Link></li>
            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <li><a href="#about-container-id" className="md:p-4 py-3 px-0 block">About</a></li>
+          <li><a href="#About" className="md:p-4 py-3 px-0 block">About</a></li>
            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <li><a className="md:p-4 py-3 px-0 block" href="#">Testimonials</a></li>
            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export const Home = () => {
   return (
-    <div id="home-parent-id" className="home-parent">
+    <div id="Home" className="home-parent">
       <div className="Home-Background-Banner">
         <img src={process.env.REACT_APP_HOME_SECTION_BACKGROUND_IMAGE} alt="home banner background" />
       </div>

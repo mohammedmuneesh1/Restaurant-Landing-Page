@@ -3,7 +3,7 @@ import { MdSlowMotionVideo } from "react-icons/md";
 
 export const About = () => {
   return (
-    <div id="about-container-id">
+    <div id="About">
       <div className="about-background-image-container">
         <img
           src={process.env.REACT_APP_ABOUT_SECTION_BACKGROUND_IMAGE}

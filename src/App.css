@@ -111,7 +111,7 @@ body{
 /*<Home/>Page Css End Here*/
 /*===============================================================================================================================*/
 /*<About> Page Css Start Here*/
-#about-container-id{
+#About{
   margin-top:10rem;
   /* background-color:aqua; */
   position:relative;
@@ -226,7 +226,7 @@ body{
 
 
 @media all and (max-width:1000px){
-  .home-parent,#about-container-id{
+  .home-parent,#About{
     margin-top:2.5rem;
     flex-direction: column-reverse;
     align-items: center;
@@ -240,7 +240,7 @@ body{
     line-height: 3.5rem;
     text-align: center;
   }
-  #about-container-id{
+  #About{
     flex-direction: column;
   }
   .about-banner-container{
