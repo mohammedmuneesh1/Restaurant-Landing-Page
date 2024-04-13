@@ -10,7 +10,16 @@ module.exports = {
       },
       minHeight: {
         '85': '350px',
-      }
+      },
+      maxWidth: {
+        '128': '32rem',
+        '600p':'700px',
+        '900p':"900px"
+      },
+      colors: {
+        'regal-blue': '#243c5a',
+        'shide-yellow':"#fe9e0d"
+      },
     },
   },
   plugins: [],

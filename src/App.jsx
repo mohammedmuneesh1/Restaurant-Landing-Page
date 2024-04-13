@@ -1,21 +1,18 @@
 import './App.css';
-import { Navbar } from './components/Navbar';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Footer } from './components/Footer';
-import Work from './components/Work';
-
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import LandingPage from './Page/LandingPage';
+import PageNotFound from './components/PageNotFound';
 function App() {
   return (
 
   <div className='App'>
-
-<Navbar/>
-<Home/>
-<About/>
-<Work/>
-<Footer/>
-  </div>
+<Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="*" element={<PageNotFound/>} />
+      </Routes>
+    </Router>
+    </div>
   );
 }
 

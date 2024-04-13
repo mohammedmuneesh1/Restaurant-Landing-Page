@@ -309,6 +309,9 @@ body{
   .App{
     max-width: 95vw;
   }
+  .about-background-image-container{
+    display: none;
+  }
   /* .HomeBackgroundBanner{
     display: none;
   } */
